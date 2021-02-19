@@ -9,6 +9,7 @@ defmodule BitCoin.AddressGenerator do
   alias BitCoin.{Crypto, KeyPair}
   alias Base58Check
 
+  @spec generate_address(any) :: {:error, false} | {:ok, {binary, binary}}
   @doc """
   Generate P2PKH and P2SH address
   """

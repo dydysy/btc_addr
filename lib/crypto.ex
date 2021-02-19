@@ -1,4 +1,8 @@
 defmodule BitCoin.Crypto do
+  @moduledoc """
+  reference:
+  https://github.com/KamilLelonek/ex_wallet/blob/master/lib/ex_wallet/crypto.ex
+  """
   @bitcoin_key "Bitcoin seed"
 
   def hash_160(public_key) do
